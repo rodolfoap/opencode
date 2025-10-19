@@ -1,7 +1,7 @@
 case "$1" in
 e)	vi -p .x
 	;;
-b)	docker build -t opencode .
+b)	./build.bash
 	;;
 s)	docker run -ti --rm --name opencode \
 		-v $(pwd):/app \
