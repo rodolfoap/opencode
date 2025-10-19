@@ -1,0 +1,11 @@
+#!/bin/bash
+mkdir -p /home/opencode/.local/share/opencode/
+cat << EOF > /home/opencode/.local/share/opencode/auth.json
+{
+	"deepinfra": {
+		"type": "api",
+		"key": "${DEEPINFRA_TOKEN}"
+	}
+}
+EOF
+/usr/local/bin/opencode
