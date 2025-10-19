@@ -1,6 +1,6 @@
 #!/bin/bash
-mkdir -p /home/opencode/.local/share/opencode/
-cat << EOF > /home/opencode/.local/share/opencode/auth.json
+mkdir -p /home/node/.local/share/opencode/
+cat << EOF > /home/node/.local/share/opencode/auth.json
 {
 	"deepinfra": {
 		"type": "api",
