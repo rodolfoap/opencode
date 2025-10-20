@@ -5,6 +5,14 @@ cat << EOF > /home/node/.local/share/opencode/auth.json
 	"deepinfra": {
 		"type": "api",
 		"key": "${DEEPINFRA_TOKEN}"
+	},
+	"anthropic": {
+		"type": "api",
+		"key": "${ANTHROPIC_KEY}"
+	},
+	"openai": {
+		"type": "api",
+		"key": "${OPENAI_KEY}"
 	}
 }
 EOF
