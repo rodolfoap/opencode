@@ -14,6 +14,8 @@ s)	docker run -ti --rm --name opencode \
 		--entrypoint=/bin/bash \
 		opencode
 	;;
+diff)	meld opencode.json /home/rap/.opencode/opencode.json
+	;;
 "")	docker run -ti --rm --name opencode \
 		-v $(pwd):/app \
 		-v ./opencode.json:/home/node/.config/opencode/opencode.json \
