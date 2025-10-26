@@ -22,6 +22,10 @@ cat << EOF >	~/.opencode/local/share/opencode/auth.json
 	"openai": {
 		"type": "api",
 		"key": "${OPENAI_KEY}"
+	},
+	"zai": {
+		"type": "api",
+		"key": "${ZAI_KEY}"
 	}
 }
 EOF
