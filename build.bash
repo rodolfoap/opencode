@@ -1,4 +1,5 @@
 #!/bin/bash
+export DOCKER_BUILDKIT=1
 cd $(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
 set -x
 docker build --no-cache -t opencode .

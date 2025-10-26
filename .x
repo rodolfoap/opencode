@@ -11,7 +11,7 @@ s)	docker run -ti --rm --name opencode \
 		-v ~/.opencode/local/:/home/node/.local/ \
 		-e DEEPINFRA_TOKEN=$(cat ~/.deepinfra_token) \
 		-e ANTHROPIC_KEY=$(cat ~/.anthropic.key2) \
-		-e OPENAI_KEY=$(cat ~/.chatgpt.key) \
+		-e OPENAI_KEY=$(cat ~/.openai.key) \
 		-e EDITOR=vim \
 		--entrypoint=/bin/bash \
 		opencode
@@ -22,7 +22,7 @@ s)	docker run -ti --rm --name opencode \
 		-v ~/.opencode/local/:/home/node/.local/ \
 		-e DEEPINFRA_TOKEN=$(cat ~/.deepinfra_token) \
 		-e ANTHROPIC_KEY=$(cat ~/.anthropic.key2) \
-		-e OPENAI_KEY=$(cat ~/.chatgpt.key) \
+		-e OPENAI_KEY=$(cat ~/.openai.key) \
 		-e EDITOR=vim \
 		opencode
 	;;
