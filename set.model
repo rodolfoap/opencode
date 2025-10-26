@@ -1,0 +1,7 @@
+#!/bin/bash
+cd $(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
+MODEL=$(egrep -v '^$|^#' models.list|head -1)
+sed -i 's|"model":.*|"model": "'${MODEL}'",|' /home/rap/.opencode/config/opencode/opencode.json
+echo /home/rap/.opencode/config/opencode/opencode.json:
+cat  /home/rap/.opencode/config/opencode/opencode.json
+sed -i 's|"model":.*|"model": "'${MODEL}'",|' opencode.json
